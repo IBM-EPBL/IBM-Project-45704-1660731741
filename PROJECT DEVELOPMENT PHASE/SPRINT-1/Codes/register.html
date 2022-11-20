@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SouthSide Register</title>
+	<style>
+		*{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right,#4d6a98, #c8e7f5);
+    background-size: cover;
+}
+form{
+    height: 600px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 74px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-style: dashed;
+    padding: 10px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+
+}
+h1{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+input{
+    width: 200px;
+    margin: auto;
+    height: 25px;
+    text-align: center;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+label{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+#submit{
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    height: 30px;
+    transition: width .3s;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    width: 220px;
+}
+#un{
+    transition: width .2s;
+}
+
+#un:hover{
+    width: 230px;
+}
+#un:hover #ul{
+    font-weight: bold;
+}
+#cr1{
+    transition: width .2s;
+}
+#cr1:hover{
+    width: 230px;
+}
+#cr2{
+    transition: width .2s;
+}
+
+#cr2:hover{
+    width: 230px;
+}
+#em{
+    transition: width .2s;
+}
+
+#em:hover{
+    width: 230px;
+}
+
+@keyframes fade-in{
+    from{padding: 100px;border: 1px solid transparent;}
+    to{padding: 10px;border: 2px solid white;}
+}
+
+
+	</style>
+</head>
+<body>
+	
+	<form action="" method="post"><br>
+		<h1>REGISTRATION</h1><br><br><br>
+		<label id="ul" for="">User name</label><br>
+		<input  type="text" name="uname" placeholder="user name" id="un"><br>
+        <label for="">E-Mail</label><br>
+        <input type="email" name="mail" id="em" placeholder="E mail address"><br>
+		<label id="cl1" for="">Create password</label><br>
+		<input type="password" name="password1" placeholder="create password" id="cr1"><br>
+		<label id="cl2" for="">Confirm password</label><br>
+		<input type="password" name="password2" placeholder="confirm password" id="cr2"><br>
+		<input id="submit" type="submit"><br><br>
+        <div class="signup-link">
+            Already have an account <a href=".//login.html">Login now</a>
+        </div>
+	</form>
+</body>
+</html>

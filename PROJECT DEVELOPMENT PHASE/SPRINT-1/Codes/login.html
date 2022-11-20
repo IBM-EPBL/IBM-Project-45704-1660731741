@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SouthSide Log-in</title>
+	<style>
+		*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right,#4d6a98, #c8e7f5);
+    background-size:cover;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    transition: font-size 0.3s;
+    
+}
+form{
+   text-align: center;
+   height: 450px;
+    
+}
+input{
+    border-bottom: 1px solid white;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    width: 200px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    
+}
+label{
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+::-ms-input-placeholder { 
+  color: white;
+}
+
+#submit{
+    border-bottom: 0px solid transparent;
+    color: white;
+    background-color: transparent;
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    transition: width 0.3s;
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#submit:hover{
+    width: 220px;   
+}
+
+#un{
+    transition: width 0.3s;
+}
+
+#ps{
+    transition: width 0.3s;
+}
+
+#un:hover{
+    width: 220px;
+}
+
+#ps:hover{
+    width: 220px;
+}
+
+@keyframes fade-in{
+    from{padding: 80px;border: 1px solid transparent;}
+    to{padding: 10px;border: 2px solid white;}
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+	</style>
+</head>
+<body><br><br>
+	<div class="form">
+		<form action="" method="post"><br><br>
+			<h1>LOG IN</h1><br><br><br>
+			<label id="ulab" for="">User name</label><br><br><br>
+			<input id="un" type="text" name="uname" placeholder="user name" required minlength="5" maxlength="12"><br><br><br>
+			<label id="plab" for="">Password</label><br><br><br>
+			<input id="ps" type="password" name="password" placeholder="password" required minlength="5" maxlength="10"><br> 
+           <br> <a href="/applications/template/forget_password.html">Forgot password?</a>
+            <br>
+			<input id="submit" type="submit">
+            <br><br><br>
+            <div class="signup-link">
+                Not a member? <a href="Register.html">Signup now</a><br><br><br>
+                <div class="Admin-link">
+                 <a href="index.html">Admin Log-in</a>
+		</form>
+	</div>
+</body>
+</html>
